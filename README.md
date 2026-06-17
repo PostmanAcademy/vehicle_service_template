@@ -78,9 +78,7 @@ Treat the collection the way an engineer treats an OpenAPI spec: your implementa
 
 ## 🔐 Authentication
 
-All endpoints are protected by **JWT Bearer token** authentication. The collection is pre-configured with a signing secret and a sample token payload so you can generate valid tokens for testing without any external setup.
-
-Your service implementation must validate incoming JWTs using the **HS256** algorithm and reject requests that carry an invalid or missing token.
+All endpoints are protected by **API Key** authentication. The API Key must be handled securely, never stored plaintext in the contents of this repo.
 
 ---
 
